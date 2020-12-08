@@ -6,10 +6,10 @@ layout: single
 
 추천 시스템 정리글 <br/>
 
-### 추천 시스템 동향
-### 추천 논문
-### CF, CBF
-### Word2vec based recommendation
-### AWS based recommendation (personalize)
-### Google cloud recommendation
-### Azure recommendation
+* 추천 시스템 동향
+* 추천 논문
+* CF, CBF
+* Word2vec based recommendation
+* AWS based recommendation (personalize)
+* Google cloud recommendation
+* Azure recommendation
