@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Minseop Lee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "AI dev <br/> \#Recommendation \#AWS"
+  bio              : "AI dev <br/> #Recommendation #AWS"
   location         : "Seoul"
   email            :
   links:
