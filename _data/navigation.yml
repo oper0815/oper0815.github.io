@@ -4,10 +4,10 @@ main:
     url: /about/
   - title: "Categories"
     url: /categories/
-  - title: "Recommendation"
-    url: /categories/Recommendation
-  - title: "Cloud Recommendation"
-    url: /categories/Cloud
+  # - title: "Recommendation"
+  #   url: /categories/Recommendation
+  # - title: "Cloud Recommendation"
+  #   url: /categories/Cloud
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
