@@ -43,25 +43,25 @@ Personalize를 구축하는 방법은 크게 3가지가 있습니다.
 * [Filter 설정](#Filter-설정)
 * [Campaigns 생성](#Campaigns-생성)
 
-## S3에-데이터-적재
+## S3에 데이터 적재
 ---
 위에 말씀드린 것과 같이 Personalize는 S3를 통해 데이터를 적재해야 합니다. 상세 과정은 다음과 같습니다.
 * Dataset groups 생성
   + **프로젝트** 개념입니다. `Create dataset Group`을 통해 생성합니다.
 
-## 데이터-로드-및-스키마-설정
+## 데이터 로드 및 스키마 설정
 ---
 위에 말씀드린 것과 같이 Personalize는 S3를 통해 데이터를 적재해야 합니다.
 
-## 솔루션-생성
+## 솔루션 생성
 ---
 위에 말씀드린 것과 같이 Personalize는 S3를 통해 데이터를 적재해야 합니다.
 
-## Filter-설정
+## Filter 설정
 ---
 위에 말씀드린 것과 같이 Personalize는 S3를 통해 데이터를 적재해야 합니다.
 
-## Campaigns-생성
+## Campaigns 생성
 ---
 위에 말씀드린 것과 같이 Personalize는 S3를 통해 데이터를 적재해야 합니다.
 
