@@ -66,11 +66,13 @@ S3에 데이터를 적재 후, 콘솔 상에서 데이터 로드 및 데이터�
   + Interaction
     - user가 item과 상호작용한 데이터입니다.
     - Interaction의 필수 항목은 `USER ID`, `ITEM ID`, `TIMESTAMP`입니다.
+    - TIMESTAMP는 유닉스 시간을 사용합니다.
+    - 이 3가지 외에 칼럼 추가도 가능합니다. 
     ```
     ex)
     USER ID | ITEM ID | TIMESTAMP
-    A         나홀로집에 1596161659
-    B         해리포터   1596156082
+    김부장    라라랜드   1596161659
+    최대리    해리포터   1596156082
     ```
     
 * Dataset groups 생성
