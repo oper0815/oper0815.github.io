@@ -54,7 +54,7 @@ Personalize를 구축하는 방법은 크게 3가지가 있습니다.
   + AWS Document에 나온대로 ([`Amazon S3 버킷에 업로드`](https://docs.aws.amazon.com/ko_kr/personalize/latest/dg/data-prep-upload-s3.html) 참고)
 * 데이터 적재
   + Personalize가 처리할 수 있는 형태로 csv파일을 생성합니다.
-  + Interaction.csv(필수), item.csv(선택), user.csv(선택)을 업로드합니다. (자세한 데이터의 형태는 아래에서 다루겠습니다.) 
+  + Interaction.csv(필수), item.csv(선택), user.csv(선택)을 S3에 업로드합니다. (자세한 데이터의 형태는 아래에서 다루겠습니다.) 
 
 ## 데이터 로드 및 스키마 설정
 
@@ -95,9 +95,11 @@ S3에 데이터를 적재 후, 콘솔 상에서 데이터 로드 및 데이터�
     
 * Dataset groups 생성
   + Dataset groups는 **프로젝트** 단위의 개념입니다. 콘솔의 `Create dataset Group`을 통해 생성합니다.
-  + 이제 Dataset groups에 집어넣을 데이터를 정의해줍니다.
-* 스키마 설정
-  + Json
+  + Personalize에 데이터를 업로드합니다. `import`를 통해 데이터를 불러오겠습니다.
+  + 먼저 이름 지정 및 스키마 설정을 합니다.
+  + 스키마(`Schema details`)는 업로드한 데이터의 칼럼을 지정해주는 작업입니다. 이를 통해 **칼럼명**과 **데이터** **type**을 정의합니다. (스키마는 쉽게 말해 personalize에게 "나 이런 형태의 데이터를 사용할 거야"라고 알려주는 작업입니다.)
+  + 앞서 만든 3개의 csv파일은 생성되어 S3에 저장되어있습니다. Data location에 해당 파일의 경로를 지정하여 Personalize에서 불러올 수 있도록 설정합니다.
+  + Interaction만 import하여도 학습 진행이 가능합니다. User와 Item 데이터를 사용하려면 각 데이터를 위의 과정 동일하게 import 합니다.
   
 ## 솔루션 생성
 
