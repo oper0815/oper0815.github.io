@@ -40,8 +40,8 @@ Personalize를 구축하는 방법은 크게 3가지가 있습니다.
 * [S3에 데이터 적재](#S3에-데이터-적재)
 * [데이터 로드 및 스키마 설정](#데이터-로드-및-스키마-설정)
 * [솔루션 생성](#솔루션-생성)
-* [Filter 설정](#Filter-설정)
 * [Campaigns 생성](#Campaigns-생성)
+* [기타 기능](#기타-기능)
 
 ## S3에 데이터 적재
 
@@ -100,20 +100,40 @@ S3에 데이터를 적재 후, 콘솔 상에서 데이터 로드 및 데이터�
   + 스키마(`Schema details`)는 업로드한 데이터의 칼럼을 지정해주는 작업입니다. 이를 통해 **칼럼명**과 **데이터** **type**을 정의합니다. (스키마는 쉽게 말해 personalize에게 "나 이런 형태의 데이터를 사용할 거야"라고 알려주는 작업입니다.)
   + 앞서 만든 3개의 csv파일은 생성되어 S3에 저장되어있습니다. Data location에 해당 파일의 경로를 지정하여 Personalize에서 불러올 수 있도록 설정합니다.
   + Interaction만 import하여도 학습 진행이 가능합니다. User와 Item 데이터를 사용하려면 각 데이터를 위의 과정 동일하게 import 합니다.
+  + 만약 데이터가 추가되어 새로 업로드하고 싶다면, `Create dataset import job`를 통해 재업로드합니다.
   
 ## 솔루션 생성
 
-위에 말씀드린 것과 같이 Personalize는 S3를 통해 데이터를 적재해야 합니다.
+Interaction 데이터를 올바르게 업로드했다면 `Create solution`이 활성화됩니다.
 
-## Filter 설정
+Personalize에서 제공하는 알고리즘을 통해 추천 엔진을 구축할 수 있습니다. 
 
-위에 말씀드린 것과 같이 Personalize는 S3를 통해 데이터를 적재해야 합니다.
+제공하는 알고리즘은 아래와 같고 추천의 목적에 맞게 선택하시면 됩니다.
+
+* Personalize의 알고리즘 (20.12.12 기준)
+  + `aws-sims` : 
+  + `aws-personalize ranking`
+  + `aws-user-personalization`
+  + `aws-popularity-count`
+  + `aws-hrnn`
+
+머신러닝(딥러닝)을 학습할 때는 하이퍼파라미터를 설정해야 합니다. Personalize에는 일부 알고리즘에서 HPO (hyperparameter optimization)을 지원합니다.
+
+하이퍼파라미터 설정 후 솔루션을 생성하면 `solution version`이 생성됩니다. 재학습을 하고 싶다면 해당 버튼을 통해 재학습을 할 수 있습니다.
+
+또한, 데이터를 추가 후 재학습을 원할 때도 해당 기능을 통해 재학습을 할 수 있습니다.
+
+* 모델 성능 지표
+
+
 
 ## Campaigns 생성
 
 위에 말씀드린 것과 같이 Personalize는 S3를 통해 데이터를 적재해야 합니다.
 
+## 기타 기능
 
+Personalize에서 제공하는 기타 유용한 기능들에 대해 알아보겠습니다.
 
 ## ☝ Reference
 1. https://docs.aws.amazon.com/personalize/latest/dg/what-is-personalize.html
