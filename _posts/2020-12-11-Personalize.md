@@ -64,12 +64,12 @@ S3에 데이터를 적재 후, 콘솔 상에서 데이터 로드 및 데이터�
   + Personalize를 사용하기 위해선 Interaction.csv, user.csv, user.csv가 필요합니다. 
   + Interaction은 반드시 필요한 필수 데이터이며, 나머지 2개는 선택사항입니다.
   + Interaction
-    - user가 item과 상호작용한 데이터입니다.
-    - Interaction의 필수 항목은 `USER ID`, `ITEM ID`, `TIMESTAMP`입니다.
+    - User가 item과 상호작용한 데이터입니다. 필수 항목은 `USER ID`, `ITEM ID`, `TIMESTAMP`입니다.
+    - 영화 추천의 경우에는 user가 item을 본 시간이며, 상품 추천의 경우에는 user가 item을 구매 or 클릭한 시간이라고 생각하시면 됩니다.
     - TIMESTAMP는 유닉스 시간을 사용합니다.
     - 이 3가지 외에 칼럼 추가도 가능합니다. 
     ```
-    ex)
+    ex)영화추천
     USER ID | ITEM ID | TIMESTAMP
     김부장    라라랜드   1596161659
     최대리    해리포터   1596156082
