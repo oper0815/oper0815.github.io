@@ -61,18 +61,36 @@ Personalize를 구축하는 방법은 크게 3가지가 있습니다.
 S3에 데이터를 적재 후, 콘솔 상에서 데이터 로드 및 데이터에 대해 정의해주는 파트입니다.
 
 * Personalize 추천 엔진의 데이터 형태
-  + Personalize를 사용하기 위해선 Interaction.csv, user.csv, user.csv가 필요합니다. 
-  + Interaction은 반드시 필요한 필수 데이터이며, 나머지 2개는 선택사항입니다.
-  + Interaction
+  + Personalize를 사용하기 위해선 Interaction.csv, user.csv, user.csv가 필요합니다. Interaction은 반드시 필요한 필수 데이터이며, 나머지 2개는 선택사항입니다.
+  + Interaction.csv
     - User가 item과 상호작용한 데이터입니다. 필수 항목은 `USER ID`, `ITEM ID`, `TIMESTAMP`입니다.
     - 영화 추천의 경우에는 user가 item을 본 시간이며, 상품 추천의 경우에는 user가 item을 구매 or 클릭한 시간이라고 생각하시면 됩니다.
     - TIMESTAMP는 유닉스 시간을 사용합니다.
     - 이 3가지 외에 칼럼 추가도 가능합니다. 
     ```
-    ex)영화추천
+    ex)영화 추천
     USER ID | ITEM ID | TIMESTAMP
     김부장    라라랜드   1596161659
-    최대리    해리포터   1596156082
+    최대리    해리포터   1596166082
+    김부장    존윅       1596171438
+    ```
+  + User.csv
+    - 유저의 메타(정보)에 관한 데이터입니다.
+    - 나이, 성별 등 유저의 고유 정보에 해당합니다.
+    ```
+    ex)영화 추천
+    USER ID | SEX | AGE ...
+    김부장    남    43
+    최대리    여    32
+    ```
+  + Item.csv
+    - 아이템의 메타(정보)에 관한 데이터입니다.
+    - 가격, 장르 등 아이템의 고유 정보에 해당합니다.
+    ```
+    ex)영화 추천
+    ITEM ID | GENRE | ACTOR | PRICE ...
+    해리포터 | 판타지 | 래드클리프  | 0
+    신과함께 | 드라마 | 하정우 | 1,000
     ```
     
 * Dataset groups 생성
