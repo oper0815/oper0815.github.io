@@ -52,6 +52,9 @@ Personalize를 구축하는 방법은 크게 3가지가 있습니다.
 * 버킷 권한 부여
   + Personalize가 S3에서 데이터를 접근하려면 권한이 필요합니다.
   + AWS Document에 나온대로 ([`Amazon S3 버킷에 업로드`](https://docs.aws.amazon.com/ko_kr/personalize/latest/dg/data-prep-upload-s3.html) 참고)
+* 데이터 적재
+  + Personalize가 처리할 수 있는 형태의 csv파일을 업로드합니다.
+  + 데이터 format은 아래에서 다루겠습니다.
 
 ## 데이터 로드 및 스키마 설정
 
