@@ -61,11 +61,15 @@ Personalize를 구축하는 방법은 크게 3가지가 있습니다.
 S3에 데이터를 적재 후, 콘솔 상에서 데이터 로드 및 데이터에 대해 정의해주는 파트입니다.
 
 * Personalize 추천 엔진의 데이터 형태
-  + Personalize를 사용하기 위해선 Interaction.csv, user.csv, user.csv가 필요합니다. Interaction은 반드시 필요한 데이터이며, 나머지 2개는 선택사항입니다.
+  + Personalize를 사용하기 위해선 Interaction.csv, user.csv, user.csv가 필요합니다. 
+  + Interaction은 반드시 필요한 필수 데이터이며, 나머지 2개는 선택사항입니다.
   + Interaction
     - user가 item과 상호작용한 데이터입니다.
     - Interaction의 필수 항목은 `USER ID`, `ITEM ID`, `TIMESTAMP`입니다.
-    - ex. 
+    ```
+    asdfasdf
+    ```
+    
 * Dataset groups 생성
   + Dataset groups는 **프로젝트** 단위의 개념입니다. 콘솔의 `Create dataset Group`을 통해 생성합니다.
   + 이제 Dataset groups에 집어넣을 데이터를 정의해줍니다.
