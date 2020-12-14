@@ -138,12 +138,14 @@ AWS Personalize는 솔루션 생성 시 오프라인 지표인 `NDCG`, `Precisio
 
 아래 그림에서는 콘솔에서 보여지는 추천 성능 지표를 확인할 수 있습며, 지표 아래에는 HPO로 설정된 하이퍼파라미터를 볼 수 있습니다.
 
-<img src="/assets/images/personal2.JPG" width="100%" height="100%">
+<img src="/assets/images/personal3.JPG" width="100%" height="100%">
 <br/>
 
 ## Campaigns 생성
 
-모델에서 추천 리스트를 반환하는 기능을 합니다.
+Campaigns는 생성된 솔루션을 기반으로 추천 리스트를 API 형태로 제공하며, 솔루션에 사용한 레시피에 따라 다른 형태의 값을 API의 Input으로 받습니다.
+
+
 
 ## 기타 기능
 
