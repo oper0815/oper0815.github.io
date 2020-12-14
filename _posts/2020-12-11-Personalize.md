@@ -145,11 +145,24 @@ AWS Personalize는 솔루션 생성 시 오프라인 지표인 `NDCG`, `Precisio
 
 Campaigns는 생성된 솔루션을 기반으로 추천 리스트를 API 형태로 제공하며, 솔루션에 사용한 레시피에 따라 다른 형태의 값을 API의 Input으로 받습니다.
 
+SIMS 레시피 기반 campaign의 경우에는 ITEM ID를 입력값으로 받아 해당 ITEM과 관련 깊은 ITEM을 반환해 주며, 타 레시피의 campaign은 USER ID를 입력으로 받아 해당 유저가 선호할만한 ITEM 리스트를 반환해 줍니다.
 
+아래의 그림은 HRNN을 사용한 솔루션의 campaign입니다.
+
+<img src="/assets/images/personal4.JPG" width="100%" height="100%">
+<br/>
 
 ## 기타 기능
 
-Personalize에서 제공하는 기타 유용한 기능들에 대해 알아보겠습니다.
+Personalize에는 기타 유용한 기능이 존재합니다.
+
+* AWS Personalize Filter
+  + 필터는 말 그대로 필터링을 해주는 역할을 하며, SQL 기반의 표현식으로 반환되는 추천 리스트를 제어할 수 있습니다. 
+  + 예를 들어, 공포 장르의 영화를 추천 리스트에서 제거하고 싶을 때 ITEM.csv의 GENRE가 "공포"일 경우 제외한다는 표현식을 사용하여 해당 기능을 적용할 수 있습니다.
+
+* AWS Personalize Event trackers
+  + Python SDK 등 방법으로 데이터를 수집할 수 있으며 실시간 추천을 위한 실시간 수집기 역할을 합니다.
+  + 학습 때는 사용되지 않으며 campaign에서 추천 리스트를 반환할 때 (Inference 과정) 수집된 데이터를 반영하여 추천 리스트를 생성합니다.
 
 ## ☝ Reference
 1. https://docs.aws.amazon.com/personalize/latest/dg/what-is-personalize.html
