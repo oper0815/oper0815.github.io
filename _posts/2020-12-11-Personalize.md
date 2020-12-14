@@ -106,16 +106,18 @@ S3에 데이터를 적재 후, 콘솔 상에서 데이터 로드 및 데이터�
 
 Interaction 데이터를 올바르게 업로드했다면 `Create solution`이 활성화됩니다.
 
-Personalize에서 제공하는 알고리즘을 통해 추천 엔진을 구축할 수 있습니다. 
+Personalize에서 제공하는 레시피를 통해 추천 엔진을 구축할 수 있습니다. (personalize에서는 알고리즘을 레시피라 부릅니다.)
 
-제공하는 알고리즘은 아래와 같고 추천의 목적에 맞게 선택하시면 됩니다.
+제공하는 레시피는 아래와 같고 추천의 목적에 맞게 선택하시면 됩니다.
 
-* Personalize의 알고리즘 (20.12.12 기준)
-  + `aws-sims` : 
-  + `aws-personalize ranking`
-  + `aws-user-personalization`
-  + `aws-popularity-count`
-  + `aws-hrnn`
+* Personalize의 레시피 (20.12.12 기준)
+  + `aws-sims` : CF기반의 알고리즘으로 주어진 아이템과 유사한 아이템을 추천 (Input:`Item`)
+  + `aws-popularity-count` : 인기도 모델로 데이터 세트에서 가장 인기 있는 항목을 추천, 모든 사용자에게 동일한 리스트 반환 (Input:`User`)
+  + `aws-hrnn` : Personalize의 대표 알고리즘인 Session 기반의 HRNN 알고리즘 (Input:`User`)
+  + `aws-user-personalization` : 2020년 말에 나온 레시피로 HRNN 및 기타 추천 알고리즘을 앙상블 형태로 제공? (제 추측 입니다...) (Input:`User`)
+  + `aws-personalize ranking` : 다른 레시피를 통한 추천 리스트 내에서 순위를 재설정하는 역할을 합니다. 추천 알고리즘의 `Ranking` 부분입니다.
+
+이전에 상용화는 `aws-hrnn`으로 구축해서 `aws-user-personalization`의 성능에 대해서는 다시 살펴봐야 할 거 같습니다.
 
 머신러닝(딥러닝)을 학습할 때는 하이퍼파라미터를 설정해야 합니다. Personalize에는 일부 알고리즘에서 HPO (hyperparameter optimization)을 지원합니다.
 
@@ -129,7 +131,7 @@ Personalize에서 제공하는 알고리즘을 통해 추천 엔진을 구축할
 
 ## Campaigns 생성
 
-위에 말씀드린 것과 같이 Personalize는 S3를 통해 데이터를 적재해야 합니다.
+모델에서 추천 리스트를 반환하는 기능을 합니다.
 
 ## 기타 기능
 
