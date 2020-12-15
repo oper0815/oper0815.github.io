@@ -44,6 +44,7 @@ last_modified_at: 2020-12-15
 
 * 스터디 방법은 [코세라](https://www.coursera.org/professional-certificates/tensorflow-in-practice)로 하는 것이 가장 효과적입니다.
 <img src="/assets/images/Tensorflow-certificate1.png" width="100%" height="100%">
+
 * 모델을 짜는 방법도 중요하지만 각 다른 도메인의 데이터를 어떻게 처리하는지도 중요 포인트입니다!
 * 파이썬을 통해 응시하는데 플러그인 준비는 미리 준비하세요. 저는 뒤늦게 세팅을 했는데 파이참이 대학원 때 설치한 버전이라 해당 자격증용 플러그인 지원을 안해서 새로 설치한 기억이.. 자세한 방법은 [가이드북](https://www.tensorflow.org/extras/cert/Setting_Up_TF_Developer_Certificate_Exam.pdf)에 있습니다.
 * 저는 시험 결제를 하고 업무 때문에 2달 후에 봤는데요. 결제 후 응시 만기 기간은 6개월이라고 합니다. (시험을 보지 못하고 만료될까봐 구글 측에 직접 여쭤봤습니다.)
