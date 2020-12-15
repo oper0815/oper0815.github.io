@@ -60,5 +60,4 @@ last_modified_at: 2020-12-15
 
 ## ☝ Reference
 
-1. https://docs.aws.amazon.com/personalize/latest/dg/what-is-personalize.html
-2. https://docs.aws.amazon.com/personalize/latest/dg/aws-personalize-set-up-permissions.html
+1. https://www.tensorflow.org/certificate
