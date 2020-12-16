@@ -46,7 +46,8 @@ last_modified_at: 2020-12-15
 <img src="/assets/images/Tensorflow-certificate1.png" width="100%" height="100%">
 
 * 모델을 짜는 방법도 중요하지만 각 다른 도메인의 데이터를 어떻게 처리하는지도 중요 포인트입니다!
-* 파이썬을 통해 응시하는데 플러그인 준비는 미리 준비하세요. 저는 뒤늦게 세팅을 했는데 파이참이 대학원 때 설치한 버전이라 해당 자격증용 플러그인 지원을 안해서 새로 설치한 기억이.. 자세한 방법은 [가이드북](https://www.tensorflow.org/extras/cert/Setting_Up_TF_Developer_Certificate_Exam.pdf)에 있습니다.
+* 시험은 코드 전체를 짜는 것이 아닌 문제에 따라 부분을 채워 넣는 방식으로 진행됩니다.
+* 파이참을 통해 응시하는데 플러그인 준비는 미리 준비하세요. 저는 뒤늦게 세팅을 했는데 파이참이 대학원 때 설치한 버전이라 해당 자격증용 플러그인 지원을 안해서 새로 설치한 기억이.. 자세한 방법은 [가이드북](https://www.tensorflow.org/extras/cert/Setting_Up_TF_Developer_Certificate_Exam.pdf)에 있습니다.
 * 저는 시험 결제를 하고 업무 때문에 2달 후에 봤는데요. 결제 후 응시 만기 기간은 6개월이라고 합니다. (시험을 보지 못하고 만료될까봐 구글 측에 직접 여쭤봤습니다.)
 * 취득하면 링크드인과 Certificate Network에 이름을 게재할 수 있다고 합니다.
 * 제출은 계속할 수 있습니다. 원하는 기준에 달성할 때까지 수정하면서 응시하세요.
