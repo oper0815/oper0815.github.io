@@ -21,7 +21,7 @@ last_modified_at: 2020-12-15
 
 `Tensorflow certificate`는 구글 공인의 텐서플로우 자격증입니다. 다른 객관식형 자격증 시험과는 다르게 이 시험은 **코딩** 시험으로 텐서플로우 기반의 AI모델링에 대한 문제로 구성되어 있습니다. 저는 9월에 자격증을 취득했고, 자격증 대해서(문제), 자격증 준비 방법, 느낀점&팁에 대해 소개하겠습니다.
 
-<img src="/assets/images/Tensorflow-certificate.JPG" width="100%" height="100%">
+<img src="/assets/images/Tensorflow-certificate.jpg" width="100%" height="100%">
 <br/>
 
 ## 자격증에 대해서 
