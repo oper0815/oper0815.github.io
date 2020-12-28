@@ -1,5 +1,5 @@
 ---
-title: "AWS personalize"
+title: "AWS personalize를 통한 개인화 추천"
 categories:
   - Cloud
 tags:
